@@ -1,0 +1,25 @@
+body {
+    font-family: sans-serif;
+
+}
+#root {
+    display: flex;
+
+}
+
+#sideBar {
+    padding: 1em;
+}
+
+#main-area {
+    padding: 1em;
+}
+
+.characters-card {
+    margin: 1em;
+    width: 184px;
+}
+
+.characters-card div {
+    margin: 0.5em;
+}
