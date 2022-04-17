@@ -2,17 +2,33 @@ body {
     font-family: sans-serif;
 
 }
+
+.title {
+    padding: 1em;
+    background-color: red;
+}
+
 #root {
     display: flex;
-
+    flex-direction: column;
+    height: 100%;
+    min-height: 100%;
 }
 
-#sideBar {
+#sidebar {
     padding: 1em;
+    display: block;
+    background-color: pink;
+    margin-top: 20px;
+    width: 20%;
+    flex-direction: column;
 }
 
-#main-area {
+.main-area {
     padding: 1em;
+    display: block;
+    background-color: yellow;
+    flex-direction: column;  
 }
 
 .characters-card {
