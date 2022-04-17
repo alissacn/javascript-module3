@@ -5,37 +5,29 @@ body {
 
 .title {
     padding: 1em;
-    background-color: red;
+    flex-direction: column;
 }
+
+li {
+    list-style-type: none;
+  }
 
 #root {
     display: flex;
-    flex-direction: column;
-    height: 100%;
-    min-height: 100%;
+    flex-direction: row;
+    
 }
 
 #sidebar {
     padding: 1em;
-    display: block;
-    background-color: pink;
-    margin-top: 20px;
+    flex-direction: row;
     width: 20%;
-    flex-direction: column;
+
 }
 
 .main-area {
     padding: 1em;
-    display: block;
-    background-color: yellow;
-    flex-direction: column;  
+    flex-direction: row;  
+    width: 80%;
 }
 
-.characters-card {
-    margin: 1em;
-    width: 184px;
-}
-
-.characters-card div {
-    margin: 0.5em;
-}
