@@ -1,3 +1,11 @@
+//funcao para criar container e colocar sidebar e images.
+function createContainer(){
+    let createDiv = document.createElement("div");
+    createDiv.className = "container";
+    document.querySelector("#root").appendChild(createDiv);
+};
+
+
 //Carrega mais episodes ao apertar o botao.
 let sidebarElement = null;
 let page = 1;
@@ -84,6 +92,7 @@ function updateMainArea(episode) {
             .then(result => {
                 let characterElement = document.createElement("div");
                 let imageElement = document.createElement("img");
+                imageElement.className = "divImg";
                 imageElement.src = result.image;
                 characterElement.appendChild(imageElement);
                 mainAreaElement.appendChild(characterElement);
@@ -106,7 +115,7 @@ function mainArea() {
     const mainElement = document.createElement('div');
     mainElement.className = 'main-area';
     mainElement.id = "main-area"
-    document.querySelector("#root").appendChild(mainElement);
+    document.querySelector(".container").appendChild(mainElement);
     mainElement.innerHTML = 'main area'
 }
 
@@ -124,13 +133,13 @@ function createTitle() {
 function sideBar() {
     sidebarElement = document.createElement("div");
     sidebarElement.id = "sidebar";
-    document.querySelector("#root").appendChild(sidebarElement);
+    document.querySelector(".container").appendChild(sidebarElement);
     loadEpisodePage()
 
 };
 
 
-
+createContainer()
 createTitle();
 sideBar();
 mainArea();

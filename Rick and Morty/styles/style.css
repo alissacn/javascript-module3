@@ -6,6 +6,7 @@ body {
 .title {
     padding: 1em;
     flex-direction: column;
+    
 }
 
 li {
@@ -14,20 +15,31 @@ li {
 
 #root {
     display: flex;
+    flex-direction: column-reverse;
+}
+
+.container {
+    display: flex;
     flex-direction: row;
-    
+    justify-content: space-between;
 }
 
 #sidebar {
     padding: 1em;
     flex-direction: row;
-    width: 20%;
-
 }
 
 .main-area {
     padding: 1em;
     flex-direction: row;  
-    width: 80%;
+    width: 100%;
+    margin: 5px;
+}
+
+.divImg p{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50px;
 }
 
